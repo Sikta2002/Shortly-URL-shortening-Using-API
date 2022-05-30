@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Submission]()
+- Solution URL: [Frontend Mentor Submission](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-using-html-css-javascript-W8KO3Lrg8E)
 - Live Site URL: [Active GitHub Page](https://sikta2002.github.io/Shortly-URL-shortening-Using-API/)
 
 ## My process
