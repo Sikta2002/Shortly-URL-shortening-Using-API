@@ -2,28 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link rel="stylesheet" href="styling.css">
-  <script src="main.js"></script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <nav class="nav">
-    
-    <!-- <div class="logo-container"> -->
-      <img src="./images/logo.svg" class="logo" alt="logo">
-    <!-- </div> -->
 
+<body>
+  <!--Navigation Section-->
+  <nav class="nav">
+    <img src="./images/logo.svg" class="logo" alt="logo">
+    
     <div class="nav-list__group">
 
       <ul class="nav-list">
@@ -32,7 +28,6 @@
         <li><a href="#" class="nav-link">Resources</a></li>
       </ul>
 
-      <!-- <div class="nav-underline"></div> -->
       <ul class="nav-list">
         <li><a href="#" class="nav-link">Login</a></li>
         <li><a href="#" class="btn btn__sign-up">Sign Up</a></li>
@@ -42,9 +37,11 @@
   </nav>
 
   <main class="main">
-
+    <!--Introduction Section-->
     <header class="header">
+
       <div class="main-heading">
+
         <h1 class="main-heading__title">More than just shorter links</h1>
         <p class="main-heading__body">
           Build your brand’s recognition and get detailed insights on how your links are performing.
@@ -52,33 +49,27 @@
         <span class="get-started-btn">
           <a href="#" class="btn btn__get-started">Get Started</a>
         </span>
+
       </div>
 
       <div class="main-img__container">
         <img src="./images/illustration-working.svg" class="main-img" alt="illustration-working">
       </div>
+
     </header>
 
-    <!-- <section class="link">
-
-      <div class="main-link">
-        <input id="input-link" type="text" placeholder="Shorten a link here..."/>
-        <button id="btn-link" class="btn btn__shorten" onclick="errorfunc()">Shorten It!</button>
-      </div>
-      <div class="error-message"><p id="error"></p></div>
-      <div class="shorten-links">links are good</div>
-    
-    </section> -->
-
+    <!--Form Section-->
     <section class="input-link">
 
-      <form id="form" class="animate_on_scroll">
+      <form id="form">
           <input id="link" name="link" type="text" placeholder="Shorten a link here...">
-          <button type="submit" class="btn btn__shorten">Shorten It!</button>
+          <button type="submit" class="btn btn__shorten" onclick="errorfunc()">Shorten It!</button>
+          <div class="error-message"><p id="error"></p></div>
       </form>
-
+      
     </section>
 
+    <!--Advanced Statistics Section-->
     <section class="statistics">
 
       <div class="statistics-heading">
@@ -119,10 +110,12 @@
             Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
           </p>
         </div>
+
       </div>
 
     </section>
 
+    <!--Boost Section-->
     <div class="getstarted-container">
       <h2 class="getstarted-container__title">Boost your links today</h2>
       <span class="get-started-btn">
@@ -132,6 +125,7 @@
 
   </main>
 
+  <!--Footer-->
   <footer class="footer">
     <div class="footer-logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
@@ -219,9 +213,13 @@
 
   </footer>
 
-  <!-- <div class="attribution">
+  <!--Attribution-->
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Sikta2002" target="_blank">Sikta Mohanty</a>.
-  </div> -->
+  </div>
+
+  <script src="./main.js"></script>
+
 </body>
 </html>
