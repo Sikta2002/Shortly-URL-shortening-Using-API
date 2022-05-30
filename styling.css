@@ -30,7 +30,6 @@ body{
 
 .nav{
     display: flex;
-    /* background-color: aquamarine; */
     margin-top: 2.5rem;
 }
 
@@ -101,11 +100,6 @@ li{
     width: 630px;
 }
 
-/* .main{
-    display: flex;
-    flex-direction: column;
-} */
-
 .header{
     display: flex;
     flex-direction: row;
@@ -150,21 +144,19 @@ li{
 
 /* Shorten Link */
 
-.input-link{
+#form{
     background-image: url("./images/bg-shorten-desktop.svg");
     background-color: var(--clr-dark-violet);
-    background-size: 100% 100%;
     background-repeat: no-repeat;
-    align-items: center;
-    margin: 0 7rem;
-    padding: 2.5em 2em;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    border-radius: 0.5em;
-    position: relative;
+    padding: 2em 1em;
+    border-radius: 6px;
+    overflow-x: hidden;
+    margin: 0 7rem;
 }
-
 
 #link{
     height: 3.5em;
@@ -178,7 +170,6 @@ li{
     color: var(--clr-grayish-violet);
     font-weight: 500;
     font-size: 1.2em;
-    /* padding-left: 1.5em; */
 }
 
 #link:focus::placeholder{
@@ -192,37 +183,53 @@ li{
     border-radius: 0.5em;
 }
 
-/* .error-message{
+.error-message{
     position: absolute;
-    margin-left: 10.5rem;
-    margin-top: -2rem;
+    margin-left: -48rem;
+    margin-top: 5rem;
 }
 
 #error{
     color: var(--clr-red);
     font-style: italic;
     font-size: 0.8em;
-} */
+}
 
 .shortened_links{
-    font-weight: 600;
-    background-color: rgb(250,250,250);
-    border-radius: 7px;
-    padding: .8em 0;
-    margin-top: 1em;
-    width: 100%;
+    background-color: white;
+    margin: 1em 7em;
+    padding: 1em;
+    text-align: right;
 }
 
 .original_link, .new_link {
     padding: .5em 1em;
+    display: inline;
 }
+
 .original_link {
-    border-bottom: 1px solid rgb(180,180,180);
-    color: hsl(257, 27%, 26%);
+    color: var(--clr-very-dark-violet);
+    float: left;
 }
+
 .new_link {
-    color: hsl(180, 66%, 49%);
+    color: var(--clr-cyan);
 }
+
+.copy_button {
+    padding: .7em 2em;
+    border: none;
+    background-color: var(--clr-cyan);
+    color: white;
+    border-radius: 0.5em;
+    float: right;
+}
+
+.copy_button:hover {
+    background-color: var(--clr-cyan-light);
+    cursor: pointer;
+}
+
 /* End of Shorten Link */
 
 /* Advanced Statistics */
@@ -345,7 +352,7 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 0 6rem 0;
+    padding: 4rem 0 5rem 0;
 }
 
 .footer-logo{
@@ -382,4 +389,18 @@ li{
 
 .footer__social-icon:hover {
     fill: var(--clr-cyan);
+}
+
+/* End of Footer */
+
+.attribution { 
+    padding: 1rem;
+    font-size: 14px; 
+    text-align: center; 
+    background-color: var(--clr-very-dark-violet);
+    color: var(--clr-gray);
+}
+.attribution a { 
+    color: var(--clr-cyan); 
+    text-decoration: none;
 }
