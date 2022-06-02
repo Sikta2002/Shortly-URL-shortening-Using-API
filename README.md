@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Continued development
 
-In the future will try to focus to make the page optimal for all device sizes.
+In the future will try to focus on making the page optimal for all device sizes.
 
 ### Useful resources
 
